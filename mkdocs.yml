@@ -8,6 +8,15 @@ theme:
   # favicon: assets/favicon.ico
   features:
     - navigation.footer
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - toc.integrate
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
   palette:
     # Dark Mode
     - scheme: slate
@@ -24,6 +33,14 @@ theme:
         name: Light mode
       primary: cyan
       accent: deep orange
+
+extra_css:
+  - styles/werner.css
+
+plugins:
+  - search
+  - rss
+  - tags
 
 markdown_extensions:
   - attr_list
